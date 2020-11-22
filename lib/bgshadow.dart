@@ -11,7 +11,7 @@ class bgshadow extends StatelessWidget {
       children: <Widget>[
         Pinned.fromSize(
           bounds: Rect.fromLTWH(38.0, 610.0, 299.0, 97.0),
-          size: Size(375.0, 707.0),
+          size: Size(411.4, 683.4),
           pinLeft: true,
           pinRight: true,
           pinBottom: true,
@@ -26,8 +26,8 @@ class bgshadow extends StatelessWidget {
           ),
         ),
         Pinned.fromSize(
-          bounds: Rect.fromLTWH(0.0, 0.0, 375.0, 707.0),
-          size: Size(375.0, 707.0),
+          bounds: Rect.fromLTWH(0.0, 0.0, 411.4, 683.4),
+          size: Size(411.4, 683.4),
           pinLeft: true,
           pinRight: true,
           pinTop: true,

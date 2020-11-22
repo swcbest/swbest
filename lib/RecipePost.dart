@@ -1,17 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:adobe_xd/pinned.dart';
-import './icondifficulty.dart';
 import './iconclock.dart';
 import './iconcook.dart';
 import './checkboxselected.dart';
-import './iconshare.dart';
 import './iconarrow.dart';
-import 'package:adobe_xd/page_link.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:http/http.dart' as http;
 
-class RecipePostlight extends StatelessWidget {
-  RecipePostlight({
+class RecipePost extends StatelessWidget {
+  RecipePost({
     Key key,
   }) : super(key: key);
   @override
@@ -236,8 +232,57 @@ class RecipePostlight extends StatelessWidget {
                                 fixedWidth: true,
                                 fixedHeight: true,
                                 child:
-                                    // Adobe XD layer: 'icon-difficulty' (component)
-                                    icondifficulty(),
+                                    // Adobe XD layer: 'icon-difficulty' (group)
+                                    Stack(
+                                  children: <Widget>[
+                                    Pinned.fromSize(
+                                      bounds: Rect.fromLTWH(0.0, 8.0, 1.0, 8.0),
+                                      size: Size(14.0, 16.0),
+                                      pinLeft: true,
+                                      pinBottom: true,
+                                      fixedWidth: true,
+                                      fixedHeight: true,
+                                      child:
+                                          // Adobe XD layer: 'line' (shape)
+                                          SvgPicture.string(
+                                        _svg_rwoaet,
+                                        allowDrawingOutsideViewBox: true,
+                                        fit: BoxFit.fill,
+                                      ),
+                                    ),
+                                    Pinned.fromSize(
+                                      bounds:
+                                          Rect.fromLTWH(7.0, 4.0, 1.0, 12.0),
+                                      size: Size(14.0, 16.0),
+                                      pinBottom: true,
+                                      fixedWidth: true,
+                                      fixedHeight: true,
+                                      child:
+                                          // Adobe XD layer: 'line' (shape)
+                                          SvgPicture.string(
+                                        _svg_xsmiq3,
+                                        allowDrawingOutsideViewBox: true,
+                                        fit: BoxFit.fill,
+                                      ),
+                                    ),
+                                    Pinned.fromSize(
+                                      bounds:
+                                          Rect.fromLTWH(14.0, 0.0, 1.0, 16.0),
+                                      size: Size(14.0, 16.0),
+                                      pinRight: true,
+                                      pinTop: true,
+                                      pinBottom: true,
+                                      fixedWidth: true,
+                                      child:
+                                          // Adobe XD layer: 'line' (shape)
+                                          SvgPicture.string(
+                                        _svg_djv3wz,
+                                        allowDrawingOutsideViewBox: true,
+                                        fit: BoxFit.fill,
+                                      ),
+                                    ),
+                                  ],
+                                ),
                               ),
                               Pinned.fromSize(
                                 bounds: Rect.fromLTWH(0.0, 36.0, 15.0, 15.0),
@@ -427,7 +472,8 @@ class RecipePostlight extends StatelessWidget {
                               Container(
                             decoration: BoxDecoration(
                               image: DecorationImage(
-                                image: const AssetImage(''),
+                                image:
+                                    const AssetImage('assets/images/cook.jpg'),
                                 fit: BoxFit.fill,
                               ),
                             ),
@@ -460,8 +506,54 @@ class RecipePostlight extends StatelessWidget {
                     fixedWidth: true,
                     fixedHeight: true,
                     child:
-                        // Adobe XD layer: 'icon-share' (component)
-                        iconshare(),
+                        // Adobe XD layer: 'icon-share' (group)
+                        Stack(
+                      children: <Widget>[
+                        Pinned.fromSize(
+                          bounds: Rect.fromLTWH(0.0, 8.3, 16.9, 12.9),
+                          size: Size(16.9, 21.2),
+                          pinLeft: true,
+                          pinRight: true,
+                          pinBottom: true,
+                          fixedHeight: true,
+                          child:
+                              // Adobe XD layer: 'path' (shape)
+                              SvgPicture.string(
+                            _svg_nfdilh,
+                            allowDrawingOutsideViewBox: true,
+                            fit: BoxFit.fill,
+                          ),
+                        ),
+                        Pinned.fromSize(
+                          bounds: Rect.fromLTWH(3.7, 0.0, 4.8, 14.7),
+                          size: Size(16.9, 21.2),
+                          pinTop: true,
+                          fixedWidth: true,
+                          fixedHeight: true,
+                          child:
+                              // Adobe XD layer: 'path' (shape)
+                              SvgPicture.string(
+                            _svg_oxha29,
+                            allowDrawingOutsideViewBox: true,
+                            fit: BoxFit.fill,
+                          ),
+                        ),
+                        Pinned.fromSize(
+                          bounds: Rect.fromLTWH(8.4, 0.0, 4.8, 4.8),
+                          size: Size(16.9, 21.2),
+                          pinTop: true,
+                          fixedWidth: true,
+                          fixedHeight: true,
+                          child:
+                              // Adobe XD layer: 'line' (shape)
+                              SvgPicture.string(
+                            _svg_at5zsv,
+                            allowDrawingOutsideViewBox: true,
+                            fit: BoxFit.fill,
+                          ),
+                        ),
+                      ],
+                    ),
                   ),
                   Pinned.fromSize(
                     bounds: Rect.fromLTWH(0.0, 5.0, 16.1, 13.5),
@@ -471,13 +563,8 @@ class RecipePostlight extends StatelessWidget {
                     fixedWidth: true,
                     fixedHeight: true,
                     child:
-                        // Adobe XD layer: 'icon-arrow' (component)
-                        PageLink(
-                      links: [
-                        PageLinkInfo(),
-                      ],
-                      child: iconarrow(),
-                    ),
+                        // Adobe XD layer: 'Iconarrow' (component)
+                        iconarrow(),
                   ),
                   Pinned.fromSize(
                     bounds: Rect.fromLTWH(77.0, 2.0, 162.0, 20.0),
@@ -911,12 +998,24 @@ class RecipePostlight extends StatelessWidget {
   }
 }
 
+const String _svg_rwoaet =
+    '<svg viewBox="0.0 8.0 1.0 8.0" ><path transform="translate(0.0, 8.0)" d="M 0 0 L 0 8" fill="none" stroke="#748a9d" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" /></svg>';
+const String _svg_xsmiq3 =
+    '<svg viewBox="7.0 4.0 1.0 12.0" ><path transform="translate(7.0, 4.0)" d="M 0 0 L 0 12" fill="none" stroke="#748a9d" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" /></svg>';
+const String _svg_djv3wz =
+    '<svg viewBox="14.0 0.0 1.0 16.0" ><path transform="translate(14.0, 0.0)" d="M 0 0 L 0 16" fill="none" stroke="#748a9d" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" /></svg>';
 const String _svg_16wqvx =
     '<svg viewBox="40.4 425.0 7.2 4.9" ><path transform="translate(-1400.0, -3937.52)" d="M 1440.35546875 4365.1259765625 L 1442.6806640625 4367.451171875 L 1447.5703125 4362.5615234375" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /></svg>';
 const String _svg_ltk0i =
     '<svg viewBox="40.4 461.0 7.2 4.9" ><path transform="translate(-1400.0, -3901.52)" d="M 1440.35546875 4365.1259765625 L 1442.6806640625 4367.451171875 L 1447.5703125 4362.5615234375" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /></svg>';
 const String _svg_n09wpe =
     '<svg viewBox="40.4 497.0 7.2 4.9" ><path transform="translate(-1400.0, -3865.52)" d="M 1440.35546875 4365.1259765625 L 1442.6806640625 4367.451171875 L 1447.5703125 4362.5615234375" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /></svg>';
+const String _svg_nfdilh =
+    '<svg viewBox="0.0 8.3 16.9 12.9" ><path transform="translate(-470.83, -652.12)" d="M 487.6889953613281 660.4400024414063 L 487.6889953613281 669.2869873046875 C 487.6889953613281 671.4990234375 485.89599609375 673.2930297851563 483.6839904785156 673.2930297851563 L 474.8359985351563 673.2930297851563 C 472.6239929199219 673.2930297851563 470.8309936523438 671.4990234375 470.8309936523438 669.2869873046875 L 470.8309936523438 660.4400024414063" fill="none" stroke="#748a9d" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" /></svg>';
+const String _svg_oxha29 =
+    '<svg viewBox="3.7 0.0 4.8 14.7" ><path transform="translate(-470.83, -652.12)" d="M 479.2599792480469 666.8663940429688 L 479.2599792480469 652.1171875 L 474.4961242675781 656.8810424804688" fill="none" stroke="#748a9d" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" /></svg>';
+const String _svg_at5zsv =
+    '<svg viewBox="8.4 0.0 4.8 4.8" ><path transform="translate(8.43, 0.0)" d="M 0 0 L 4.763864994049072 4.763864994049072" fill="none" stroke="#748a9d" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" /></svg>';
 const String _svg_y89u8w =
     '<svg viewBox="76.7 0.0 221.7 29.6" ><path transform="translate(-414.37, 0.01)" d="M 496.8059997558594 5.742000102996826 L 496.8059997558594 5.760000228881836 C 496.8059997558594 18.90800094604492 507.489013671875 29.5669994354248 520.6669921875 29.5669994354248 L 599.1069946289063 29.5669994354248 L 604.6389770507813 29.5669994354248 L 683.0789794921875 29.5669994354248 C 696.2570190429688 29.5669994354248 706.9400024414063 18.90800094604492 706.9400024414063 5.760000228881836 L 706.9400024414063 5.742000102996826 C 706.9400024414063 2.562999963760376 709.5230102539063 -0.0130000002682209 712.708984375 -0.0130000002682209 L 491.0369873046875 -0.0130000002682209 C 494.2229919433594 -0.0130000002682209 496.8059997558594 2.562999963760376 496.8059997558594 5.742000102996826 Z" fill="#e4e4e4" stroke="none" stroke-width="1" stroke-miterlimit="10" stroke-linecap="butt" /></svg>';
 const String _svg_6jzogc =

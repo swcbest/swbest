@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:adobe_xd/pinned.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
-class three extends StatelessWidget {
-  three({
+class Three extends StatelessWidget {
+  Three({
     Key key,
   }) : super(key: key);
   @override

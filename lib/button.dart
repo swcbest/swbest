@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:adobe_xd/pinned.dart';
 
-class button extends StatelessWidget {
-  button({
+class Button extends StatelessWidget {
+  Button({
     Key key,
   }) : super(key: key);
   @override

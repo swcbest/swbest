@@ -1,17 +1,14 @@
-import "package:flutter/material.dart";
-import "./RecipesFilterlight.dart";
+import 'package:flutter/material.dart';
+import './SignIn.dart';
 
-void main() {
-  runApp(MyApp());
-}
+void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      title: 'Login',
-      home: RecipesFilterlight(),
+      title: 'Flutter Demo',
+      home: SignIn(),
     );
   }
 }

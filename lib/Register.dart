@@ -2,23 +2,17 @@ import 'package:flutter/material.dart';
 import 'package:adobe_xd/pinned.dart';
 import './iconarrow.dart';
 import './iconselect.dart';
-import './MainPageUpdatelight.dart';
-import 'package:adobe_xd/page_link.dart';
-import './broccoli.dart';
-import './MainPagelight1.dart';
+import './Broccoli.dart';
 import './inputfield.dart';
-import './iconchevron.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 class Register extends StatelessWidget {
   final VoidCallback group1;
   final VoidCallback group2;
-  final VoidCallback group3;
   Register({
     Key key,
     this.group1,
     this.group2,
-    this.group3,
   }) : super(key: key);
   @override
   Widget build(BuildContext context) {
@@ -28,47 +22,35 @@ class Register extends StatelessWidget {
         children: <Widget>[
           // Adobe XD layer: 'content' (group)
           SizedBox(
-            width: 345.0,
-            height: 792.0,
+            width: 344.0,
+            height: 406.0,
             child: Stack(
               children: <Widget>[
                 Pinned.fromSize(
                   bounds: Rect.fromLTWH(0.0, 0.0, 16.1, 13.5),
-                  size: Size(344.6, 792.0),
+                  size: Size(343.6, 406.0),
                   pinLeft: true,
                   pinTop: true,
                   fixedWidth: true,
                   fixedHeight: true,
                   child:
-                      // Adobe XD layer: 'icon-arrow' (component)
+                      // Adobe XD layer: 'Iconarrow' (component)
                       iconarrow(),
                 ),
-                Container(),
                 Pinned.fromSize(
                   bounds: Rect.fromLTWH(327.0, 68.0, 16.6, 11.3),
-                  size: Size(344.6, 792.0),
+                  size: Size(343.6, 406.0),
                   pinRight: true,
                   pinTop: true,
                   fixedWidth: true,
                   fixedHeight: true,
                   child:
-                      // Adobe XD layer: 'icon-tick' (component)
-                      PageLink(
-                    links: [
-                      PageLinkInfo(
-                        transition: LinkTransition.PushDown,
-                        ease: Curves.easeInOut,
-                        duration: 0.5,
-                        pageBuilder: () => MainPageUpdatelight(),
-                      ),
-                    ],
-                    child: iconselect(),
-                  ),
+                      // Adobe XD layer: 'Icontick' (component)
+                      iconselect(),
                 ),
                 Pinned.fromSize(
                   bounds: Rect.fromLTWH(154.0, 69.0, 68.0, 20.0),
-                  size: Size(344.6, 792.0),
-                  pinTop: true,
+                  size: Size(343.6, 406.0),
                   fixedWidth: true,
                   fixedHeight: true,
                   child: Text(
@@ -84,7 +66,8 @@ class Register extends StatelessWidget {
                 ),
                 Pinned.fromSize(
                   bounds: Rect.fromLTWH(86.0, 157.0, 204.0, 249.0),
-                  size: Size(344.6, 792.0),
+                  size: Size(343.6, 406.0),
+                  pinBottom: true,
                   fixedWidth: true,
                   fixedHeight: true,
                   child:
@@ -142,8 +125,8 @@ class Register extends StatelessWidget {
                           pinTop: true,
                           fixedHeight: true,
                           child:
-                              // Adobe XD layer: 'broccoli' (component)
-                              broccoli(),
+                              // Adobe XD layer: 'Broccoli' (component)
+                              Broccoli(),
                         ),
                       ],
                     ),
@@ -564,21 +547,11 @@ class Register extends StatelessWidget {
           Transform.translate(
             offset: Offset(32.0, 70.0),
             child:
-                // Adobe XD layer: 'icon-arrow' (component)
-                PageLink(
-              links: [
-                PageLinkInfo(
-                  transition: LinkTransition.Fade,
-                  ease: Curves.easeOut,
-                  duration: 0.3,
-                  pageBuilder: () => MainPagelight1(),
-                ),
-              ],
-              child: SizedBox(
-                width: 16.0,
-                height: 14.0,
-                child: iconarrow(),
-              ),
+                // Adobe XD layer: 'Iconarrow' (component)
+                SizedBox(
+              width: 16.0,
+              height: 14.0,
+              child: iconarrow(),
             ),
           ),
           Transform.translate(
@@ -589,37 +562,34 @@ class Register extends StatelessWidget {
               onTap: () => group2?.call(),
               child: SizedBox(
                 width: 315.0,
-                height: 281.0,
+                height: 224.0,
                 child: Stack(
                   children: <Widget>[
                     Pinned.fromSize(
-                      bounds: Rect.fromLTWH(0.0, 0.0, 315.0, 281.0),
-                      size: Size(315.0, 281.0),
+                      bounds: Rect.fromLTWH(0.0, 0.0, 315.0, 96.0),
+                      size: Size(315.0, 224.0),
                       pinLeft: true,
                       pinRight: true,
                       pinTop: true,
-                      pinBottom: true,
+                      fixedHeight: true,
                       child:
                           // Adobe XD layer: 'input-field' (component)
                           inputfield(),
                     ),
                     Pinned.fromSize(
-                      bounds: Rect.fromLTWH(276.0, 28.0, 8.3, 4.2),
-                      size: Size(315.0, 281.0),
+                      bounds: Rect.fromLTWH(0.0, 128.0, 315.0, 96.0),
+                      size: Size(315.0, 224.0),
+                      pinLeft: true,
                       pinRight: true,
-                      pinTop: true,
-                      fixedWidth: true,
+                      pinBottom: true,
                       fixedHeight: true,
-                      child: Transform.rotate(
-                        angle: 3.1416,
-                        child:
-                            // Adobe XD layer: 'icon-chevron' (component)
-                            iconchevron(),
-                      ),
+                      child:
+                          // Adobe XD layer: 'input-field' (component)
+                          inputfield(),
                     ),
                     Pinned.fromSize(
                       bounds: Rect.fromLTWH(30.0, 24.0, 54.0, 16.0),
-                      size: Size(315.0, 281.0),
+                      size: Size(315.0, 224.0),
                       pinLeft: true,
                       pinTop: true,
                       fixedWidth: true,
@@ -637,252 +607,9 @@ class Register extends StatelessWidget {
                       ),
                     ),
                     Pinned.fromSize(
-                      bounds: Rect.fromLTWH(0.0, 62.0, 315.0, 219.0),
-                      size: Size(315.0, 281.0),
+                      bounds: Rect.fromLTWH(30.0, 152.0, 99.0, 16.0),
+                      size: Size(315.0, 224.0),
                       pinLeft: true,
-                      pinRight: true,
-                      pinTop: true,
-                      pinBottom: true,
-                      child:
-                          // Adobe XD layer: 'selector' (group)
-                          Stack(
-                        children: <Widget>[
-                          Pinned.fromSize(
-                            bounds: Rect.fromLTWH(0.0, 0.0, 315.0, 219.0),
-                            size: Size(315.0, 219.0),
-                            pinLeft: true,
-                            pinRight: true,
-                            pinTop: true,
-                            pinBottom: true,
-                            child:
-                                // Adobe XD layer: 'rectangle' (shape)
-                                Container(
-                              decoration: BoxDecoration(
-                                borderRadius: BorderRadius.only(
-                                  bottomRight: Radius.circular(8.0),
-                                  bottomLeft: Radius.circular(8.0),
-                                ),
-                                color: const Color(0xfff0f4f8),
-                              ),
-                            ),
-                          ),
-                          Pinned.fromSize(
-                            bounds: Rect.fromLTWH(49.0, 172.0, 8.0, 16.0),
-                            size: Size(315.0, 219.0),
-                            pinLeft: true,
-                            pinBottom: true,
-                            fixedWidth: true,
-                            fixedHeight: true,
-                            child: Text(
-                              '4',
-                              style: TextStyle(
-                                fontFamily: 'text1',
-                                fontSize: 16,
-                                color: const Color(0x40748a9d),
-                                letterSpacing: -0.16,
-                                fontWeight: FontWeight.w500,
-                                height: 3.125,
-                              ),
-                              textAlign: TextAlign.center,
-                            ),
-                          ),
-                          Pinned.fromSize(
-                            bounds: Rect.fromLTWH(49.0, 137.0, 8.0, 16.0),
-                            size: Size(315.0, 219.0),
-                            pinLeft: true,
-                            fixedWidth: true,
-                            fixedHeight: true,
-                            child: Text(
-                              '3',
-                              style: TextStyle(
-                                fontFamily: 'text1',
-                                fontSize: 16,
-                                color: const Color(0x80748a9d),
-                                letterSpacing: -0.16,
-                                fontWeight: FontWeight.w500,
-                                height: 3.125,
-                              ),
-                              textAlign: TextAlign.center,
-                            ),
-                          ),
-                          Pinned.fromSize(
-                            bounds: Rect.fromLTWH(49.0, 102.0, 8.0, 16.0),
-                            size: Size(315.0, 219.0),
-                            pinLeft: true,
-                            fixedWidth: true,
-                            fixedHeight: true,
-                            child: Text(
-                              '2',
-                              style: TextStyle(
-                                fontFamily: 'text1',
-                                fontSize: 16,
-                                color: const Color(0xff748a9d),
-                                letterSpacing: -0.16,
-                                fontWeight: FontWeight.w500,
-                              ),
-                              textAlign: TextAlign.center,
-                            ),
-                          ),
-                          Pinned.fromSize(
-                            bounds: Rect.fromLTWH(51.0, 67.0, 4.0, 16.0),
-                            size: Size(315.0, 219.0),
-                            pinLeft: true,
-                            fixedWidth: true,
-                            fixedHeight: true,
-                            child: Text(
-                              '1',
-                              style: TextStyle(
-                                fontFamily: 'text1',
-                                fontSize: 16,
-                                color: const Color(0x80748a9d),
-                                letterSpacing: -0.16,
-                                fontWeight: FontWeight.w500,
-                                height: 3.125,
-                              ),
-                              textAlign: TextAlign.center,
-                            ),
-                          ),
-                          Pinned.fromSize(
-                            bounds: Rect.fromLTWH(49.0, 32.0, 8.0, 16.0),
-                            size: Size(315.0, 219.0),
-                            pinLeft: true,
-                            pinTop: true,
-                            fixedWidth: true,
-                            fixedHeight: true,
-                            child: Text(
-                              '0',
-                              style: TextStyle(
-                                fontFamily: 'text1',
-                                fontSize: 16,
-                                color: const Color(0x40748a9d),
-                                letterSpacing: -0.16,
-                                fontWeight: FontWeight.w500,
-                                height: 3.125,
-                              ),
-                              textAlign: TextAlign.center,
-                            ),
-                          ),
-                          Pinned.fromSize(
-                            bounds: Rect.fromLTWH(138.0, 137.0, 40.0, 16.0),
-                            size: Size(315.0, 219.0),
-                            fixedWidth: true,
-                            fixedHeight: true,
-                            child: Text(
-                              'packs',
-                              style: TextStyle(
-                                fontFamily: 'text1',
-                                fontSize: 16,
-                                color: const Color(0x80748a9d),
-                                letterSpacing: -0.16,
-                                fontWeight: FontWeight.w500,
-                                height: 3.125,
-                              ),
-                              textAlign: TextAlign.center,
-                            ),
-                          ),
-                          Pinned.fromSize(
-                            bounds: Rect.fromLTWH(138.0, 102.0, 40.0, 16.0),
-                            size: Size(315.0, 219.0),
-                            fixedWidth: true,
-                            fixedHeight: true,
-                            child: Text(
-                              'heads',
-                              style: TextStyle(
-                                fontFamily: 'text1',
-                                fontSize: 16,
-                                color: const Color(0xff748a9d),
-                                letterSpacing: -0.16,
-                                fontWeight: FontWeight.w500,
-                              ),
-                              textAlign: TextAlign.center,
-                            ),
-                          ),
-                          Pinned.fromSize(
-                            bounds: Rect.fromLTWH(148.0, 67.0, 20.0, 16.0),
-                            size: Size(315.0, 219.0),
-                            fixedWidth: true,
-                            fixedHeight: true,
-                            child: Text(
-                              'lbs',
-                              style: TextStyle(
-                                fontFamily: 'text1',
-                                fontSize: 16,
-                                color: const Color(0x80748a9d),
-                                letterSpacing: -0.16,
-                                fontWeight: FontWeight.w500,
-                                height: 3.125,
-                              ),
-                              textAlign: TextAlign.center,
-                            ),
-                          ),
-                          Pinned.fromSize(
-                            bounds: Rect.fromLTWH(137.0, 32.0, 42.0, 16.0),
-                            size: Size(315.0, 219.0),
-                            pinTop: true,
-                            fixedWidth: true,
-                            fixedHeight: true,
-                            child: Text(
-                              'grams',
-                              style: TextStyle(
-                                fontFamily: 'text1',
-                                fontSize: 16,
-                                color: const Color(0x40748a9d),
-                                letterSpacing: -0.16,
-                                fontWeight: FontWeight.w500,
-                                height: 3.125,
-                              ),
-                              textAlign: TextAlign.center,
-                            ),
-                          ),
-                        ],
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-            ),
-          ),
-          Transform.translate(
-            offset: Offset(30.0, 754.0),
-            child:
-                // Adobe XD layer: 'dropdown' (group)
-                GestureDetector(
-              onTap: () => group3?.call(),
-              child: SizedBox(
-                width: 315.0,
-                height: 281.0,
-                child: Stack(
-                  children: <Widget>[
-                    Pinned.fromSize(
-                      bounds: Rect.fromLTWH(0.0, 0.0, 315.0, 281.0),
-                      size: Size(315.0, 281.0),
-                      pinLeft: true,
-                      pinRight: true,
-                      pinTop: true,
-                      pinBottom: true,
-                      child:
-                          // Adobe XD layer: 'input-field' (component)
-                          inputfield(),
-                    ),
-                    Pinned.fromSize(
-                      bounds: Rect.fromLTWH(276.0, 28.0, 8.3, 4.2),
-                      size: Size(315.0, 281.0),
-                      pinRight: true,
-                      pinTop: true,
-                      fixedWidth: true,
-                      fixedHeight: true,
-                      child: Transform.rotate(
-                        angle: 3.1416,
-                        child:
-                            // Adobe XD layer: 'icon-chevron' (component)
-                            iconchevron(),
-                      ),
-                    ),
-                    Pinned.fromSize(
-                      bounds: Rect.fromLTWH(30.0, 24.0, 99.0, 16.0),
-                      size: Size(315.0, 281.0),
-                      pinLeft: true,
-                      pinTop: true,
                       fixedWidth: true,
                       fixedHeight: true,
                       child: Text(
@@ -895,318 +622,6 @@ class Register extends StatelessWidget {
                           fontWeight: FontWeight.w500,
                         ),
                         textAlign: TextAlign.left,
-                      ),
-                    ),
-                    Pinned.fromSize(
-                      bounds: Rect.fromLTWH(0.0, 62.0, 315.0, 219.0),
-                      size: Size(315.0, 281.0),
-                      pinLeft: true,
-                      pinRight: true,
-                      pinTop: true,
-                      pinBottom: true,
-                      child:
-                          // Adobe XD layer: 'selector' (group)
-                          Stack(
-                        children: <Widget>[
-                          Pinned.fromSize(
-                            bounds: Rect.fromLTWH(0.0, 0.0, 315.0, 219.0),
-                            size: Size(315.0, 219.0),
-                            pinLeft: true,
-                            pinRight: true,
-                            pinTop: true,
-                            pinBottom: true,
-                            child:
-                                // Adobe XD layer: 'rectangle' (shape)
-                                Container(
-                              decoration: BoxDecoration(
-                                borderRadius: BorderRadius.only(
-                                  bottomRight: Radius.circular(8.0),
-                                  bottomLeft: Radius.circular(8.0),
-                                ),
-                                color: const Color(0xfff0f4f8),
-                              ),
-                            ),
-                          ),
-                          Pinned.fromSize(
-                            bounds: Rect.fromLTWH(36.0, 172.0, 32.0, 16.0),
-                            size: Size(315.0, 219.0),
-                            pinLeft: true,
-                            pinBottom: true,
-                            fixedWidth: true,
-                            fixedHeight: true,
-                            child: Text(
-                              '2022',
-                              style: TextStyle(
-                                fontFamily: 'text1',
-                                fontSize: 16,
-                                color: const Color(0x40748a9d),
-                                letterSpacing: -0.16,
-                                fontWeight: FontWeight.w500,
-                                height: 3.125,
-                              ),
-                              textAlign: TextAlign.center,
-                            ),
-                          ),
-                          Pinned.fromSize(
-                            bounds: Rect.fromLTWH(38.0, 137.0, 30.0, 16.0),
-                            size: Size(315.0, 219.0),
-                            pinLeft: true,
-                            fixedWidth: true,
-                            fixedHeight: true,
-                            child: Text(
-                              '2021',
-                              style: TextStyle(
-                                fontFamily: 'text1',
-                                fontSize: 16,
-                                color: const Color(0x80748a9d),
-                                letterSpacing: -0.16,
-                                fontWeight: FontWeight.w500,
-                                height: 3.125,
-                              ),
-                              textAlign: TextAlign.center,
-                            ),
-                          ),
-                          Pinned.fromSize(
-                            bounds: Rect.fromLTWH(37.0, 102.0, 32.0, 16.0),
-                            size: Size(315.0, 219.0),
-                            pinLeft: true,
-                            fixedWidth: true,
-                            fixedHeight: true,
-                            child: Text(
-                              '2020',
-                              style: TextStyle(
-                                fontFamily: 'text1',
-                                fontSize: 16,
-                                color: const Color(0xff748a9d),
-                                letterSpacing: -0.16,
-                                fontWeight: FontWeight.w500,
-                              ),
-                              textAlign: TextAlign.center,
-                            ),
-                          ),
-                          Pinned.fromSize(
-                            bounds: Rect.fromLTWH(38.0, 67.0, 30.0, 16.0),
-                            size: Size(315.0, 219.0),
-                            pinLeft: true,
-                            fixedWidth: true,
-                            fixedHeight: true,
-                            child: Text(
-                              '2019',
-                              style: TextStyle(
-                                fontFamily: 'text1',
-                                fontSize: 16,
-                                color: const Color(0xe5748a9d),
-                                letterSpacing: -0.16,
-                                fontWeight: FontWeight.w500,
-                                height: 3.125,
-                              ),
-                              textAlign: TextAlign.center,
-                            ),
-                          ),
-                          Pinned.fromSize(
-                            bounds: Rect.fromLTWH(38.0, 32.0, 30.0, 16.0),
-                            size: Size(315.0, 219.0),
-                            pinLeft: true,
-                            pinTop: true,
-                            fixedWidth: true,
-                            fixedHeight: true,
-                            child: Text(
-                              '2018',
-                              style: TextStyle(
-                                fontFamily: 'text1',
-                                fontSize: 16,
-                                color: const Color(0x40748a9d),
-                                letterSpacing: -0.16,
-                                fontWeight: FontWeight.w500,
-                                height: 3.125,
-                              ),
-                              textAlign: TextAlign.center,
-                            ),
-                          ),
-                          Pinned.fromSize(
-                            bounds: Rect.fromLTWH(144.0, 137.0, 28.0, 16.0),
-                            size: Size(315.0, 219.0),
-                            fixedWidth: true,
-                            fixedHeight: true,
-                            child: Text(
-                              'APR',
-                              style: TextStyle(
-                                fontFamily: 'text1',
-                                fontSize: 16,
-                                color: const Color(0x80748a9d),
-                                letterSpacing: -0.16,
-                                fontWeight: FontWeight.w500,
-                                height: 3.125,
-                              ),
-                              textAlign: TextAlign.center,
-                            ),
-                          ),
-                          Pinned.fromSize(
-                            bounds: Rect.fromLTWH(143.0, 173.0, 30.0, 16.0),
-                            size: Size(315.0, 219.0),
-                            pinBottom: true,
-                            fixedWidth: true,
-                            fixedHeight: true,
-                            child: Text(
-                              'MAY',
-                              style: TextStyle(
-                                fontFamily: 'text1',
-                                fontSize: 16,
-                                color: const Color(0x40748a9d),
-                                letterSpacing: -0.16,
-                                fontWeight: FontWeight.w500,
-                                height: 3.125,
-                              ),
-                              textAlign: TextAlign.center,
-                            ),
-                          ),
-                          Pinned.fromSize(
-                            bounds: Rect.fromLTWH(142.0, 102.0, 32.0, 16.0),
-                            size: Size(315.0, 219.0),
-                            fixedWidth: true,
-                            fixedHeight: true,
-                            child: Text(
-                              'MAR',
-                              style: TextStyle(
-                                fontFamily: 'text1',
-                                fontSize: 16,
-                                color: const Color(0xff748a9d),
-                                letterSpacing: -0.16,
-                                fontWeight: FontWeight.w500,
-                              ),
-                              textAlign: TextAlign.center,
-                            ),
-                          ),
-                          Pinned.fromSize(
-                            bounds: Rect.fromLTWH(145.0, 67.0, 26.0, 16.0),
-                            size: Size(315.0, 219.0),
-                            fixedWidth: true,
-                            fixedHeight: true,
-                            child: Text(
-                              'FEB',
-                              style: TextStyle(
-                                fontFamily: 'text1',
-                                fontSize: 16,
-                                color: const Color(0x80748a9d),
-                                letterSpacing: -0.16,
-                                fontWeight: FontWeight.w500,
-                                height: 3.125,
-                              ),
-                              textAlign: TextAlign.center,
-                            ),
-                          ),
-                          Pinned.fromSize(
-                            bounds: Rect.fromLTWH(145.0, 32.0, 26.0, 16.0),
-                            size: Size(315.0, 219.0),
-                            pinTop: true,
-                            fixedWidth: true,
-                            fixedHeight: true,
-                            child: Text(
-                              'JAN',
-                              style: TextStyle(
-                                fontFamily: 'text1',
-                                fontSize: 16,
-                                color: const Color(0x40748a9d),
-                                letterSpacing: -0.16,
-                                fontWeight: FontWeight.w500,
-                                height: 3.125,
-                              ),
-                              textAlign: TextAlign.center,
-                            ),
-                          ),
-                          Pinned.fromSize(
-                            bounds: Rect.fromLTWH(247.0, 32.0, 14.0, 16.0),
-                            size: Size(315.0, 219.0),
-                            pinTop: true,
-                            fixedWidth: true,
-                            fixedHeight: true,
-                            child: Text(
-                              '21',
-                              style: TextStyle(
-                                fontFamily: 'text1',
-                                fontSize: 16,
-                                color: const Color(0x40748a9d),
-                                letterSpacing: -0.16,
-                                fontWeight: FontWeight.w500,
-                                height: 3.125,
-                              ),
-                              textAlign: TextAlign.center,
-                            ),
-                          ),
-                          Pinned.fromSize(
-                            bounds: Rect.fromLTWH(246.0, 68.0, 16.0, 16.0),
-                            size: Size(315.0, 219.0),
-                            fixedWidth: true,
-                            fixedHeight: true,
-                            child: Text(
-                              '22',
-                              style: TextStyle(
-                                fontFamily: 'text1',
-                                fontSize: 16,
-                                color: const Color(0x80748a9d),
-                                letterSpacing: -0.16,
-                                fontWeight: FontWeight.w500,
-                                height: 3.125,
-                              ),
-                              textAlign: TextAlign.center,
-                            ),
-                          ),
-                          Pinned.fromSize(
-                            bounds: Rect.fromLTWH(246.0, 104.0, 16.0, 16.0),
-                            size: Size(315.0, 219.0),
-                            fixedWidth: true,
-                            fixedHeight: true,
-                            child: Text(
-                              '23',
-                              style: TextStyle(
-                                fontFamily: 'text1',
-                                fontSize: 16,
-                                color: const Color(0xff748a9d),
-                                letterSpacing: -0.16,
-                                fontWeight: FontWeight.w500,
-                                height: 3.125,
-                              ),
-                              textAlign: TextAlign.center,
-                            ),
-                          ),
-                          Pinned.fromSize(
-                            bounds: Rect.fromLTWH(246.0, 140.0, 16.0, 16.0),
-                            size: Size(315.0, 219.0),
-                            fixedWidth: true,
-                            fixedHeight: true,
-                            child: Text(
-                              '24',
-                              style: TextStyle(
-                                fontFamily: 'text1',
-                                fontSize: 16,
-                                color: const Color(0x80748a9d),
-                                letterSpacing: -0.16,
-                                fontWeight: FontWeight.w500,
-                                height: 3.125,
-                              ),
-                              textAlign: TextAlign.center,
-                            ),
-                          ),
-                          Pinned.fromSize(
-                            bounds: Rect.fromLTWH(246.0, 176.0, 16.0, 16.0),
-                            size: Size(315.0, 219.0),
-                            pinBottom: true,
-                            fixedWidth: true,
-                            fixedHeight: true,
-                            child: Text(
-                              '25',
-                              style: TextStyle(
-                                fontFamily: 'text1',
-                                fontSize: 16,
-                                color: const Color(0x40748a9d),
-                                letterSpacing: -0.16,
-                                fontWeight: FontWeight.w500,
-                                height: 3.125,
-                              ),
-                              textAlign: TextAlign.center,
-                            ),
-                          ),
-                        ],
                       ),
                     ),
                   ],

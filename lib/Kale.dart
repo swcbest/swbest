@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:adobe_xd/pinned.dart';
 import 'package:adobe_xd/blend_mask.dart';
 
-class Broccoli extends StatelessWidget {
-  Broccoli({
+class Kale extends StatelessWidget {
+  Kale({
     Key key,
   }) : super(key: key);
   @override
@@ -11,14 +11,14 @@ class Broccoli extends StatelessWidget {
     return Stack(
       children: <Widget>[
         Pinned.fromSize(
-          bounds: Rect.fromLTWH(0.0, 0.0, 152.0, 152.0),
-          size: Size(152.0, 152.0),
+          bounds: Rect.fromLTWH(0.0, 0.0, 201.0, 201.0),
+          size: Size(201.0, 201.0),
           pinLeft: true,
           pinRight: true,
           pinTop: true,
           pinBottom: true,
           child:
-              // Adobe XD layer: 'broccoli-shadow' (shape)
+              // Adobe XD layer: 'kale-shadow' (shape)
               BlendMask(
             blendMode: BlendMode.multiply,
             child: Container(
@@ -32,14 +32,14 @@ class Broccoli extends StatelessWidget {
           ),
         ),
         Pinned.fromSize(
-          bounds: Rect.fromLTWH(0.0, 0.0, 152.0, 152.0),
-          size: Size(152.0, 152.0),
+          bounds: Rect.fromLTWH(0.0, 0.0, 201.0, 201.0),
+          size: Size(201.0, 201.0),
           pinLeft: true,
           pinRight: true,
           pinTop: true,
           pinBottom: true,
           child:
-              // Adobe XD layer: 'broccoli' (shape)
+              // Adobe XD layer: 'kale' (shape)
               Container(
             decoration: BoxDecoration(
               image: DecorationImage(
