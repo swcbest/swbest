@@ -6,7 +6,8 @@ class Cupertino_Textfield extends StatefulWidget {
   _Cupertino_TextfieldState createState() => _Cupertino_TextfieldState();
 }
 
-class _Cupertino_TextfieldState extends State<Cupertino_Textfield> { //실제 textfield인 기능
+class _Cupertino_TextfieldState extends State<Cupertino_Textfield> {
+  //실제 textfield인 기능
   var count;
   var onchangedvalue;
   var onsubmittedvalue;
@@ -36,7 +37,6 @@ class _Cupertino_TextfieldState extends State<Cupertino_Textfield> { //실제 te
         placeholder: "2 packs",
         onChanged: onchangedvalue,
         onSubmitted: onsubmittedvalue,
-        print(onchangedvalue)
       ),
     );
   }

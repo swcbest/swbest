@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:adobe_xd/pinned.dart';
-import 'package:myapp/MainPageUpdate.dart';
-import 'package:myapp/function_asset/toggle_textfield.dart';
+import './function_asset/toggle_textfield.dart';
 import 'asset/cupertino_datepicker.dart';
 import 'asset/cupertino_textfield.dart';
 import './function_asset/toggle_date_picker_button.dart';
@@ -9,7 +8,6 @@ import './function_asset/build_buttonset.dart';
 import './function_asset/date_picker.dart';
 import './function_asset/state_textfield.dart';
 import 'package:flutter/cupertino.dart';
-import 'package:myapp/MainPageUpdate.dart';
 
 Future<void> showPicker(BuildContext context) {
   return showModalBottomSheet(
