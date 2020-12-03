@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:adobe_xd/pinned.dart';
+import 'package:myapp/MainPageUpdate.dart';
 import 'package:myapp/function_asset/toggle_textfield.dart';
 import 'asset/cupertino_datepicker.dart';
 import 'asset/cupertino_textfield.dart';
@@ -7,6 +8,8 @@ import './function_asset/toggle_date_picker_button.dart';
 import './function_asset/build_buttonset.dart';
 import './function_asset/date_picker.dart';
 import './function_asset/state_textfield.dart';
+import 'package:flutter/cupertino.dart';
+import 'package:myapp/MainPageUpdate.dart';
 
 Future<void> showPicker(BuildContext context) {
   return showModalBottomSheet(
@@ -89,6 +92,34 @@ class Curegister extends StatelessWidget {
                       letterSpacing: -0.2,
                     ),
                     textAlign: TextAlign.center,
+                  ),
+                ),
+                Pinned.fromSize(
+                  bounds: Rect.fromLTWH(280.0, 60.0, 80.0, 20.0),
+                  size: Size(344.6, 792.0),
+                  fixedHeight: true,
+                  fixedWidth: true,
+                  child: IconButton(
+                    icon: Icon(Icons.check),
+                    color: Colors.grey[300],
+                    alignment: Alignment.center,
+                    onPressed: () {
+                      print('REGISTER');
+                    },
+                  ),
+                ),
+                Pinned.fromSize(
+                  bounds: Rect.fromLTWH(10.0, 60.0, 80.0, 20.0),
+                  size: Size(344.6, 792.0),
+                  fixedHeight: true,
+                  fixedWidth: true,
+                  child: IconButton(
+                    icon: Icon(Icons.backspace),
+                    color: Colors.grey[300],
+                    alignment: Alignment.center,
+                    onPressed: () {
+                      print('Go back');
+                    },
                   ),
                 ),
                 Pinned.fromSize(

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 
 class HandlePikcerButton extends StatelessWidget {
+  //cancel, done 버튼
   const HandlePikcerButton({
     Key key,
     this.onPressCancel,

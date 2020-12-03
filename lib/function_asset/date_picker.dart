@@ -12,14 +12,12 @@ class _CuDatePickerState extends State<CuDatePicker> {
   Widget build(BuildContext context) {
     return Container(
       constraints: BoxConstraints(
-        maxWidth: 400.0,
+        maxWidth: 300.0,
       ),
       child: CupertinoDatePicker(
         initialDateTime: DateTime.now(),
-        maximumDate: new DateTime.now(),
         minimumYear: 2018,
         maximumYear: 2030,
-        backgroundColor: CupertinoColors.systemGrey,
         mode: CupertinoDatePickerMode.date,
         onDateTimeChanged: (DateTime newdate) {
           setState(() {

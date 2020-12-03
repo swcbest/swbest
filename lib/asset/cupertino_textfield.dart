@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:myapp/function_asset/toggle_textfield.dart';
 import '../function_asset/build_buttonset.dart';
 import '../function_asset/state_textfield.dart';
 import '../function_asset/toggle_date_picker_button.dart';
@@ -13,7 +14,7 @@ class Tino extends StatelessWidget {
       context: context,
       builder: (BuildContext context) {
         return Container(
-          height: 200,
+          height: 100,
           child: Column(
             children: [
               Expanded(
@@ -39,7 +40,7 @@ class Tino extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             Center(
-              child: ToggleDatePicker(
+              child: ToggleTextField(
                 showPicker: showPicker,
               ),
             ),

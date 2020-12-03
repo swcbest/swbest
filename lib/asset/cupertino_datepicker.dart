@@ -14,22 +14,19 @@ class Cuper extends StatelessWidget {
         builder: (BuildContext context) {
           return Column(
             children: <Widget>[
-              Padding(
-                padding: EdgeInsets.all(20.0),
-                child: Container(
-                  height: 450,
-                  width: 700,
-                  child: Column(
-                    children: [
-                      Expanded(
-                        child: HandlePikcerButton(),
-                      ),
-                      Expanded(
-                        flex: 7,
-                        child: CuDatePicker(),
-                      ),
-                    ],
-                  ),
+              Container(
+                height: 200,
+                width: 500,
+                child: Column(
+                  children: [
+                    Expanded(
+                      child: HandlePikcerButton(),
+                    ),
+                    Expanded(
+                      flex: 7,
+                      child: CuDatePicker(),
+                    ),
+                  ],
                 ),
               ),
             ],
